@@ -1,0 +1,61 @@
+/*Desafíos*/
+
+1.-Imprime los números enteros entre 1 y x. Si x es menor que 1, retorna false.
+
+R==> function imprimeHasta(x) {
+    if (x < 1) {
+        return false;
+    }
+    for (var i = 1; i <= x; i++) {
+        console.log(i);
+    }
+}
+imprimeHasta(1000000);
+y = imprimeHasta(-10);
+console.log("si x es menor que 1", y); 
+
+-----------------------------------------------
+2.-Imprime todos los enteros desde el 0 hasta el 255. Al imprimir cada 
+entero, debes imprimir la suma que se lleva. Retorna la suma final.
+
+R==> function printSum(x) {
+    var sum = 0;
+    //escribe tú código aquí
+    for (var i = 0; i <= x; i++) {
+        console.log(i);
+        sum = sum + i;
+        console.log(sum);
+    }
+    return sum
+}
+y = printSum(255) //debe imprimir todos los enteros desde el ol hasta 255, y la suma parcial en cada punto
+console.log(y)
+
+----------------------------------------------------------------------------------------------------------
+3.-Debes imprimir la suma de todos los valores en el arreglo dado:
+
+R==>   function printSumArray(x) {
+    var sum = 0;
+    for (var i = 0; i < x.length; i++) {
+        //escribir el código acá
+        sum = sum + x[i];
+    }
+    return sum;
+}
+console.log(printSumArray([1, 2, 3]));
+
+------------------------------------------------------------------------------------------------------------
+4.-Escribe una función que retorne el mayor elemento del arreglo dado:
+
+R==>  function printSumArray(x) {
+    var sum = 0;
+    for (var i = 0; i < x.length; i++) {
+        //escribir el código acá
+        sum = sum + x[i];
+    }
+    return sum;
+}
+console.log(printSumArray([1, 2, 3]));
+
+
+
